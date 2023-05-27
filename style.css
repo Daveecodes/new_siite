@@ -26,7 +26,6 @@ html,body{
 }
 .container{
     width: 100%;
-    height: 100%;
     max-width: 1313px;
     margin: 0 auto;
     padding: 0 24px;
@@ -204,31 +203,10 @@ html,body{
     align-items: center;
     margin-bottom: 6px;
 }
-.finds_row{
-    width: 100%;
-    height: 100%;
-    background-color: #ECECEC;
-    padding: 88px;
-    position: relative;
+.small_screen{
+    display: none;
 }
-.product_desc{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 130%;
-    color: #767676;
-    margin-bottom: 30px;
-}
-itle_section{
-    position: absolute;
-    text-align: center;
-    z-index: 5;
-}
-.product_color{
-    display: inline-block;
-    border: 1px solid #EAEAEA;
-    border-radius: 20px;
-    padding: 2px 6px;
-}
+
 
 .finds_image{
     background: radial-gradient(98.56% 98.92% at 1.22% 1.08%, white 0%, white 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
@@ -250,53 +228,6 @@ itle_section{
     gap: 32px;
     position: absolute;
     top:97%;
-}
-.article{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.article_image{
-    width: 100%;
-    object-fit: contain;
-}
-.article_info{
-    padding: 32px;
-    width: 616px;
-    height: 122px;
-    background-color: #252525;
-    border-radius: 0px 0px 10px 10px;
-    position: absolute;
-    left: 4px;
-    bottom: -110px;
-}
-.article_title{
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 130%;
-    color: #FFFFFF;
-}
-.article_subtitle{
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 130%;
-    color: #C4C4C4;
-}
-.info_article{
-    padding: 32px;
-    width: 616px;
-    height: 122px;
-    background-color: #EAEAEA;
-    border-radius: 0px 0px 10px 10px;
-    position: absolute;
-    bottom: -110px;
-    
-}
-.black_one{
-    color: black;
-}
-.bottom_one{
-    color: #767676;;
 }
 
 
@@ -325,6 +256,11 @@ itle_section{
        height: 100%;
     }
 }
+@media screen and (max-width:1265px) {
+    .header{
+       height: 100%;
+    }
+}
 @media screen and (max-width:1085px) {
     .header_title{
         width: 50%;
@@ -349,6 +285,9 @@ itle_section{
     .header_title{
         width: 70%;
     }
+    .small_screen{
+        display: block;
+    }
 }
 @media screen and (max-width:900px) {
     .header_title{
@@ -362,13 +301,16 @@ itle_section{
         width: 100%;
     }
 }
+@media screen and (max-width:500px) {
+    .section_title{
+        font-size: 24px;
+        line-height: 130%;
+    }
+   
+}
 @media screen and (max-width:435px) {
-    .finds_row{
-        padding: 100px 5px;
+    .container{
+        padding: 0 12px;
     }
-    .title_section{
-        position: absolute;
-        text-align: center;
-        z-index: 5;
-    }
+   
 }
